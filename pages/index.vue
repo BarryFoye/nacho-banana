@@ -16,10 +16,11 @@ export default {
   },
   async fetch() {
     const market_data = await fetch(
-      `https://web-api.coinmarketcap.com/v1/cryptocurrency/listings/historical?convert=USD,USD,BTC&date=2021-10-24&limit=100&start=1`
+      // `https://web-api.coinmarketcap.com/v1/cryptocurrency/listings/historical?convert=USD,USD,BTC&date=2021-10-24&limit=100&start=1`
+      `http://localhost:3000/v1/market_data/tree_map`
     ).then((res) => res.json())
 
-    this.market_data = this.market_data.concat(market_data.data[0].id)
+    this.market_data = this.market_data.concat(market_data)
     console.log(this.market_data)
   },
 }
