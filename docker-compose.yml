@@ -9,3 +9,9 @@ services:
       - ../nacho-banana:/app
     ports:
       - '3200:3200'
+    networks:
+      - integration_default
+
+networks:
+  integration_default:
+    external: true

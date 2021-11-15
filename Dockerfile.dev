@@ -15,4 +15,6 @@ ENV NUXT_HOST=0.0.0.0
 # set app port
 ENV NUXT_PORT=3200
 
+ENV DATA_SERVICE_HOST=api
+
 CMD ["npm", "run", "dev"]
