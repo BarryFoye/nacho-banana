@@ -1,6 +1,6 @@
-export const state = () => ({
-  marketDataTreeMap: [],
-})
+// export const state = () => ({
+//   marketDataTreeMap: [],
+// })
 
 // export const actions = {
 //   FILL_DATA_TREE_MAP({ commit, state }) {
@@ -8,4 +8,4 @@ export const state = () => ({
 //   },
 // }
 
-export const mutations = {}
+// export const mutations = {}
